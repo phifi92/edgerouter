@@ -4,7 +4,6 @@
 pushd /config/user-data
 
 # téléchargement du/des fichier(s) iBlocklist
-#curl -L "http://list.iblocklist.com/?list=ijfqtofzixtwayqovmxn" | gunzip | grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}'|sed 's/$/\/24/' > Preiblocklist.txt
 curl -L "http://list.iblocklist.com/?list=ijfqtofzixtwayqovmxn" | gunzip  > Preiblocklist.txt
 
 # AWK : conversion range d'IP d'iblocklist.com en format CIDR
